@@ -8,10 +8,7 @@ on:
     branches: [ main ]
   schedule:
     - cron:  '2 7 * * *'
-    # 每天中国时间0点2分 (UTC时间前一天16点2分)
-    - cron:  '2 16 * * *'
-    # 每天UTC时间0点2分
-    - cron:  '2 0 * * *'
+    
 
 jobs:
   build:
@@ -31,20 +28,11 @@ jobs:
     - name: Run Java Application
       run: java -jar target/bing-wallpaper-jar-with-dependencies.jar
 
-    - name: upload files to OSS
-      uses: fangbinwei/aliyun-oss-website-action@v1
-      with:
-          accessKeyId: ${{ secrets.OSS_ACCESS_KEY_ID }}
-          accessKeySecret: ${{ secrets.OSS_ACCESS_KEY_SECRET }}
-          bucket: bing-hk
-          # use your own endpoint
-          endpoint: oss-cn-hongkong.aliyuncs.com
-          folder: docs
           
     - name: Commit files
       run: |
-         git config --local user.email "niumoo@126.com"
-         git config --local user.name "niumoo"
+         git config --local user.email "github-actions[bot]@users.noreply.github.com"
+         git config --local user.name "github-actions[bot]"
          git pull
          git add README.md
          git add bing-wallpaper.md
@@ -55,6 +43,6 @@ jobs:
     - name: Push changes
       uses:  ad-m/github-push-action@master
       with:
-         github_token: ${{ secrets.MY_GIT_TOKEN }}
+         github_token: ${{ secrets.GITHUB_TOKEN }}
          branch: main
     
