@@ -1,4 +1,6 @@
 ## Bing Wallpaper
+2026-11-17 | [雪松林步道，冰川国家公园，蒙大拿州，美国 (© DBushue Photography/Getty Images)](https://cn.bing.com/th?id=OHR.TrailCedars_ZH-CN2670680285_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4) 
+
 2026-11-15 | [覆霜的红叶杜鹃 (© avoferten/Shutterstock)](https://cn.bing.com/th?id=OHR.FirstFrost_ZH-CN2219029557_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4) 
 
 2026-11-14 | [中国香港维多利亚港 (© Juan Romero/Cavan Images)](https://cn.bing.com/th?id=OHR.BlueHK_ZH-CN1382345392_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4) 
